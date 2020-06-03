@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_width="192dp"
+    xmlns:cardview="http://schemas.android.com/tools"
+    android:layout_margin="5dp"
+    android:layout_height="200dp"
+    android:padding="10dp"
+    cardview:cardConerRadius="20dp"
+    card_view:cardElevation="0dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="135dp">
+            <ImageView
+                android:id="@+id/imgHinh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:background="@drawable/edit_image"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Review"
+                android:background="#03A9F4"
+                android:textColor="#fff"
+                style=""
+                android:textSize="16sp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtTenmon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên món"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:padding="3dp" />
+
+        <TextView
+            android:id="@+id/txtMota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mô tả các món ăn"
+            android:textColor="#DD000000"/>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

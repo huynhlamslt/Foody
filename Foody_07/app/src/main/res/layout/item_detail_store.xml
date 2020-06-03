@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:paddingBottom="5dp"
+    android:id="@+id/line_food"
+    android:clickable="true">
+
+    <ImageView
+        android:id="@+id/img_dt_food"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_weight="2"
+        android:src="@drawable/bundau"
+        android:scaleType="fitXY"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="6"
+        android:orientation="vertical"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:id="@+id/txt_dt_tenquan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bún đậu cô Chang"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:paddingBottom="5dp"/>
+        <TextView
+            android:id="@+id/txt_dt_diachi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chợ Bùi Đức, Quốc lộ 1A, P. Tam Hoà"
+            android:paddingBottom="5dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp">
+            <TextView
+                android:id="@+id/txt_dt_quanan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quán ăn"
+                android:textColor="#000"/>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_toLeftOf="@id/txt_dt_cmt"
+                android:layout_centerVertical="true"
+                android:src="@drawable/cmt"/>
+            <TextView
+                android:id="@+id/txt_dt_cmt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20"
+                android:layout_alignParentRight="true"
+               />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/km"/>
+            <TextView
+                android:id="@+id/txt_dt_khuyenmai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mã k...n mãi"
+                android:layout_marginLeft="5dp"
+                android:textColor="#000"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:gravity="right"
+        android:paddingRight="10dp">
+        <TextView
+            android:id="@+id/txt_dt_diem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6.3"
+            android:textColor="#4CAF50"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingBottom="5dp"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_dt_khoangcach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.2"
+                android:paddingBottom="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="km"
+                android:layout_toRightOf="@id/txt_dt_khoangcach"
+                android:layout_marginLeft="3dp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_dt_soanh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30"
+            android:drawableLeft="@drawable/camera"
+            android:drawablePadding="5dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

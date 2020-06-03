@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#f4061c">
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/muiten"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text=" Tìm kiếm"
+            android:textColor="#fff"
+            android:drawablePadding="2dp"
+            android:textSize="12dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:background="#f4061c"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/img_arrow"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:src="@drawable/arrow"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ảnh"
+                android:textAllCaps="false"
+                android:layout_marginRight="-10dp"
+                android:background="#E42727"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thực đơn"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bún Đậu Cô Chang"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:textColor="#BB0707"
+            android:gravity="center"
+            android:background="#ddd"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text= "Bò Mỹ nhúng ớt"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textColor="#181717"
+            android:background="#CAC6C6"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text= "Bò Mỹ nhúng ớt nhỏ"
+            android:textSize="16sp"
+            android:textStyle=""
+            android:paddingLeft="10dp"
+            android:textColor="#181717"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="119,000"
+            android:paddingLeft="10dp"
+            android:textColor="#5078C0"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#D3CACA"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text= "Bò Mỹ nhúng ớt vừa"
+            android:textSize="16sp"
+            android:textStyle=""
+            android:paddingLeft="10dp"
+            android:textColor="#181717"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="239,000"
+            android:paddingLeft="10dp"
+            android:textColor="#5078C0"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#D3CACA"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text= "Bò Mỹ nhúng ớt lớn"
+            android:textSize="16sp"
+            android:textStyle=""
+            android:paddingLeft="10dp"
+            android:textColor="#181717"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="349,000"
+            android:paddingLeft="10dp"
+            android:textColor="#5078C0"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#D3CACA"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text= "Bê thui mẹt nhỏ"
+            android:textSize="16sp"
+            android:textStyle=""
+            android:paddingLeft="10dp"
+            android:textColor="#181717"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="119,000"
+            android:paddingLeft="10dp"
+            android:textColor="#5078C0"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#D3CACA"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text= "Bê thui mẹt vừa"
+            android:textSize="16sp"
+            android:textStyle=""
+            android:paddingLeft="10dp"
+            android:textColor="#181717"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="239,000"
+            android:paddingLeft="10dp"
+            android:textColor="#5078C0"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#D3CACA"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text= "Bê thui mẹt lớn"
+            android:textSize="16sp"
+            android:textStyle=""
+            android:paddingLeft="10dp"
+            android:textColor="#181717"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="349,000"
+            android:paddingLeft="10dp"
+            android:textColor="#5078C0"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#D3CACA"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text= "Heo luộc thập cẩm"
+            android:textSize="16sp"
+            android:textStyle=""
+            android:paddingLeft="10dp"
+            android:textColor="#181717"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="349,000"
+            android:paddingLeft="10dp"
+            android:textColor="#5078C0"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#D3CACA"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text= "Rau thêm"
+            android:textSize="16sp"
+            android:textStyle=""
+            android:paddingLeft="10dp"
+            android:textColor="#181717"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20,000"
+            android:paddingLeft="10dp"
+            android:textColor="#5078C0"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#D3CACA"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text= "Thị thêm"
+            android:textSize="16sp"
+            android:textStyle=""
+            android:paddingLeft="10dp"
+            android:textColor="#181717"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100,000"
+            android:paddingLeft="10dp"
+            android:textColor="#5078C0"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#D3CACA"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text= "Bún đậu"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textColor="#181717"
+            android:background="#CAC6C6"
+            android:layout_marginTop="5dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#817D7D"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text= "Món thêm"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textColor="#181717"
+            android:background="#CAC6C6"
+            />
+    </LinearLayout>
+
+</LinearLayout>

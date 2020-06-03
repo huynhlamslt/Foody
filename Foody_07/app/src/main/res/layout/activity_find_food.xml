@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FindFoodActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#f4061c">
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/muiten"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text=" Tìm kiếm"
+            android:textColor="#fff"
+            android:drawablePadding="2dp"
+            android:textSize="12dp"/>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f4061c">
+
+        <ImageView
+            android:id="@+id/img_arrow"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow"/>
+
+        <EditText
+            android:id="@+id/edtTim"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Tìm địa điểm, món ăn, địa chỉ"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:padding="5dp"
+            android:background="@drawable/edit_round"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@drawable/timkiem"
+            android:paddingLeft="10dp"
+            android:drawablePadding="5dp"
+            android:layout_toRightOf="@id/img_arrow"
+            android:text="Bún"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"/>
+        <Button
+            android:id="@+id/btn_tinh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:text="Đồng Nai"
+            android:textSize="18sp"
+            android:textStyle=""
+            android:textColor="#000"
+            android:textAllCaps="false"
+            android:background="@android:color/transparent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Địa Điểm"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_toLeftOf="@id/txt_o"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/txt_o"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ở"
+            android:layout_toLeftOf="@id/btn_tinh"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:background="#EECECE">
+
+        <Button
+            android:id="@+id/btn_dung_nhat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:background="@drawable/button_border"
+            android:text="Đúng nhất"/>
+
+        <Button
+            android:id="@+id/btn_gan_toi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:background="@android:color/transparent"
+            android:text="Gần tôi"/>
+
+        <Button
+            android:id="@+id/btn_pho_bien"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:background="@android:color/transparent"
+            android:text="Phổ biến"/>
+
+        <Button
+            android:id="@+id/btn_bo_loc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:background="@drawable/button_border_left"
+            android:text="Bộ lọc"
+            android:drawableRight="@drawable/filter"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:clickable="true"
+        android:id="@+id/ln_list">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6">
+
+            <Button
+                android:id="@+id/btn_click"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"/>
+
+            <ListView
+                android:id="@+id/lstQuan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="false"/>
+
+        </RelativeLayout>
+
+
+
+        <ListView
+            android:id="@+id/lstTinh"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:clickable="false"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
